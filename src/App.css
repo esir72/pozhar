@@ -48,3 +48,27 @@
  .game-actions button{font-size:13px;padding:9px 12px;}
  .game-note{font-size:12px!important;}
 }
+.matrix-scene{display:block;overflow-y:auto;scrollbar-width:thin;scrollbar-color:#f87258 #232525;}
+.matrix-scene .content{margin-left:15vw;width:min(1180px,80vw);padding-top:78px;padding-bottom:88px;}
+.matrix-scene h1{font-size:clamp(48px,5.5vw,72px);margin:12px 0 18px;}
+.duty-tables{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.duty-table-panel{overflow:hidden;background:#111716ed;border:1px solid #ffffff50;border-radius:10px;backdrop-filter:blur(8px);}
+.duty-table-panel h2{font:700 19px Manrope,sans-serif;color:#fff;margin:0;padding:14px 16px;border-bottom:1px solid #ffffff35;}
+.duty-table-panel table{width:100%;border-collapse:collapse;table-layout:fixed;}
+.duty-table-panel th,.duty-table-panel td{text-align:left;vertical-align:top;padding:11px 13px;border-bottom:1px solid #ffffff27;line-height:1.35;}
+.duty-table-panel th{font-size:13px;color:#ffad9a;background:#202725;font-weight:700;}
+.duty-table-panel td{font-size:15px;color:#f3f1ed;}
+.duty-table-panel th:first-child,.duty-table-panel td:first-child{width:67%;}
+.duty-table-panel th:last-child,.duty-table-panel td:last-child{width:33%;font-weight:600;}
+.duty-table-panel tr:last-child td{border-bottom:0;}
+.duty-note{grid-column:1/-1;margin:0!important;font-size:14px!important;line-height:1.4!important;color:#fff!important;}
+@media(max-width:700px){
+ .matrix-scene .content{width:auto;margin:0 14px 0 54px;padding-top:70px;padding-bottom:88px;}
+ .matrix-scene h1{font-size:clamp(40px,9vw,56px);margin:10px 0 14px;}
+ .duty-tables{grid-template-columns:1fr;gap:10px;}
+ .duty-table-panel h2{font-size:17px;padding:11px 12px;}
+ .duty-table-panel th,.duty-table-panel td{padding:9px 8px;}
+ .duty-table-panel th{font-size:11px;}
+ .duty-table-panel td{font-size:13px;}
+ .duty-note{font-size:12px!important;}
+}
